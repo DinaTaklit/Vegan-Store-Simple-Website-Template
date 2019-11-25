@@ -1,0 +1,601 @@
+body{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/********************** Common *********************************/
+.primary-button{
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(170, 210, 54);
+    padding: 9px 34px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 4px;
+    margin-right: 16px;
+    cursor: pointer;
+    outline: none; 
+}
+/**********************Header*************************************/
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png');
+    background-position: left;
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    height: 77px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 28px;
+    box-sizing: border-box;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+}
+#logo{
+    width:40px;
+}
+
+.dropdown-wrapper{
+    display: inline-block; 
+    position: relative;
+}
+.menu-items{
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 24px;
+    cursor: pointer;
+}
+.dropdown{
+    width: 150px;
+    font-family: 'Poppins', sans-serif;
+    border-top: 2px solid rgb(170, 210, 54);
+    background-color: white;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 20px;
+    position: absolute;
+    right:24px; 
+    display: none;
+}
+.menu-items i{  
+    padding-left: 4px;
+}
+#menu-right :first-of-type:hover .dropdown{
+    display: block;
+}
+.dropdown p{
+    border-bottom: 1px solid #ccc; 
+    cursor: pointer;    
+}
+/******************************** Section1*************************************/
+#desc{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+#desc h1{
+    width: 100%;
+    max-width: 1100px;
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: 8.8px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0;
+  
+}
+#desc p {
+    width: 100%;
+    max-width: 1100px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: #8b8b99;
+    text-align: center;
+    padding-top: 32px;
+}
+/************************************** Section2*********************************************/
+
+#section2{
+    width:100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+#step1{
+   background-color: #5acda6; 
+}
+#step2{
+    background-color: #91ac41;
+}
+#step3{
+    background-color:  #e4b476;
+}
+#step4{
+    background-color: #f69dad;
+}
+.step{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 112px 40px;
+}
+.step:hover i  {
+  transform: scale(1.1);
+}
+
+
+.step i{
+    width: 96px;
+    font-size: 96px;
+    margin-top: 0;
+}
+.step-label{
+   font-weight: 600;
+   font-size: 24px;
+}
+.step-description{
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+}
+/***************************section3*************************/
+#section3
+{
+    widows: 100%;
+    background-color:  #f7eee2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    text-align: center 
+}
+
+ #fresh-food{
+    font-family: 'Caveat', cursive;
+    color: #91ac41;
+    font-size: 24px;
+    margin: 0;
+    margin-top: 35px;
+}
+#section3-heading,#section4-heading {
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 8px;
+}
+#section3-description,#section4-description{
+    font-size: 16px;
+    font-weight: 500;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    margin: 0;
+    margin-bottom: 55px;
+}
+
+
+#store-wrapper h1{
+    font-size: 24px;
+    font-weight: 600;
+}
+#store-wrapper p{
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    color: #8b8b99;
+}
+.store-item-wrapper{
+    padding: 24px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.store-item i{
+    font-size: 60px;
+    width: 60px;
+    height: 60px;
+    color: white;
+}
+.store-item{
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #e3b375;
+    padding: 40px;
+}
+#store-wrapper{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.store-item-wrapper .store-item:hover  {
+    transform: scale(1.1);
+  }
+  
+/*******************************Section4*************************************/
+#section4
+{
+    widows: 100%;
+    background-color:  white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    text-align: center;
+}
+#section4-description{
+    max-width: 700px;
+  
+}
+.testimonial-message{
+    font-size: 14px;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    margin: 0;
+}
+.testimonial-by{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 0px;
+}
+.jobe-role{
+    color: #8b8b99;
+    font-size: 12px;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+.testimonial-card{
+    background-color: #f5f6fb;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 30px;
+    margin: 16px;
+    transition: box-shadow 0.3s;
+}
+.testimonial-card img{
+    border-radius: 50%;
+    width:80px;
+    margin-bottom: 25px;
+}
+#testimonial-card-wrapper{
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    grid-gap: 16px;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1140px;
+}
+.testimonial-card:hover{
+    box-shadow:0 12px 16px 0 rgba(39,39,47,0.06);  
+}
+/*************************** Section5********************/
+#section5{
+    width: 100%;
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 65% 35%;
+}
+#section5-left{
+    /* background-image: url("https://mobirise.com/extensions/organicamp/assets/images/19.jpg");
+    background-size: cover; */
+}
+#section5-left img{
+    width: 100%;
+}
+#section5-right{
+    box-sizing: border-box;
+    background-image: url("https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+   padding: 112px;
+}
+#section5-right h3{
+    font-size: 44px;
+    font-weight: 600;
+}
+#section5-right p{
+    color: #8b8b99;
+    font-size: 16px;
+    letter-spacing: 0.5;
+    line-height: 1.6;
+    margin: 0;
+}
+#section5-right form{
+    width: 100%;
+    box-sizing: border-box;
+}
+#email{
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 500;
+    background-color: white;
+    padding: 12px;
+    color: #8b8b99;
+    font-size: 16px;
+    margin-top: 60px;
+    display: block;
+}
+#subscribe{
+    background-color: #f69dad;
+    padding: 16px 42px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    border: 0;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 16px;
+    outline: none;
+}
+#subscribe:hover{
+    background-color: transparent;
+    border: 1px solid #f69dad;
+    color: #f69dad;
+}
+/***************************************** Section6***************************************************/
+#section6{
+    width: 100%;
+    background-color: #f6fcfa;
+
+}
+#stat-wrapper{
+    width: 100%;
+    max-width: 1140px;
+    padding: 100px 0;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: stretch;
+}
+.stat-item{
+    width: 25%;
+    padding: 0 64px;
+}
+.stat-item h3{
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0
+}
+.stat-item p{
+    color: #57e3b5;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    margin: 0;
+}
+#section7{
+    width: 100%;
+    color: #8b8b99;
+    font-size: 44px;
+    font-weight: 400;
+    text-align: center;
+}
+#section7 h3{
+    color: #8b8b99;
+    font-size: 44px;
+    font-weight: 400;
+}
+#section7 iframe{
+    width: 100%;
+    height: 425px;
+}
+#line-separator{
+    width: 96px;
+    display: inline-block;
+    height: 1px;
+    background-color: #e4b476;
+    margin-bottom: 36px;
+    box-sizing: border-box;
+}
+/******************* Section8*************************/
+#section8{
+    width: 100%;
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+#addrss-wrapper{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+    box-sizing: border-box;
+    justify-content: start;
+    padding: 16px;
+    margin-top: 16px;
+}
+#section8 .fstp{
+    color: #91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    margin-top: 35px;
+}
+#section8 h3{
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 8px;
+}
+#section8 h4{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 32px;
+}
+#section8 .description{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    margin-bottom: 55px;
+}
+
+#section8 input, #section8 textarea{
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    color: #8b8b99;
+    border-radius: 6px;
+    border: 1px solid #e5e6ec;
+    margin-bottom: 16px;
+    box-sizing: border-box; 
+}
+#section8 #sbt-btn{
+    font-size: 16px;
+    color: white;
+    margin-right: 0;
+    font-weight: 600;
+    background-color: rgb(170, 210, 54);
+    padding: 9px 34px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+footer{
+    background-color: #232323;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 30px 0px;
+    flex-shrink: 0; 
+}
+
+/********************** For responsive design*******************************************/
+@media (max-width: 900px){
+    .menu-items{
+        display: none;
+    }
+    .primary-button{
+        margin: 0;
+    }
+    #desc h1{
+      font-size: 28px;   
+    }
+    #desc p{
+        padding: 16px;
+        box-sizing: border-box;
+    }
+    #section2{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #section2 .step{
+        width:100%;
+        box-sizing: border-box;
+    }
+    #section3{
+        padding: 16px;
+        box-sizing: border-box;
+    }
+    #section3 #store-wrapper{
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+    #section3 .store-item-wrapper{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #section4{
+        padding: 16px;
+        box-sizing: border-box;
+    }
+    #section4 #section4-heading{
+        font-size: 28px; 
+    }
+    #testimonial-card-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #section4 .testimonial-card{
+        width: 100%;
+        box-sizing: border-box;
+        
+    }
+    #section4 .testimonial-by {
+        font-size: important 18px;
+    }
+    #section5{
+        display: flex;
+        flex-direction: column; 
+        
+    }
+     #section5-left{
+        width: 100%;  
+    } 
+    #section5-right{
+        width:100;
+        box-sizing: border-box;
+       padding: 16px;
+    }  
+    #section5-right h3{
+        font-size: 28px;
+    }
+    #section5-right p{
+        font-size: 18px;
+    }
+    #section6 #stat-wrapper{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .stats-item {
+        width: 100%;
+    }
+    #addrss-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding: 16px;
+        padding-top: 0;
+        box-sizing: border-box;
+    }
+    #addrss-wrapper > div {
+        width: 100%;
+    }
+
+    #addrss-wrapper > div:last-of-type {
+        width: 100%;
+    }
+    
+}
